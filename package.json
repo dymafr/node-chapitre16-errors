@@ -4,20 +4,22 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "NODE_ENV=development nodemon app.js",
-    "start:prod": "NODE_ENV=production nodemon app.js",
+    "start": "nodemon --env-file=.env app.js",
+    "start:prod": "nodemon --env-file=.env.production app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.9",
-    "errorhandler": "^1.5.1",
-    "express": "^4.18.2",
-    "http-errors": "^2.0.0",
-    "mongoose": "^7.3.1",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.22",
-    "pug": "^3.0.2"
+    "ejs": "^6.0.1",
+    "errorhandler": "^1.5.2",
+    "express": "^5.2.1",
+    "http-errors": "^2.0.1",
+    "mongoose": "^9.9.2",
+    "morgan": "^1.11.0",
+    "pug": "^3.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
